@@ -62,13 +62,23 @@ header div.right-menu a.hamburger-icon img:hover{
 div.menu-dropdown{
 	display: none;
 	position: fixed;
-	z-index: 0;
-	background-color: #f2f2f2;
-	top: 60px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    z-index: 0;
+	-webkit-backface-visibility: hidden;
+    background-image: url(../asset/image/index-background.jpg);
+	top: 60px; bottom: 0;
 	width: 100%;
+	height: 100%;
 	padding: 10px;
-	box-shadow: 0px 0px 30px black;
-	transition-duration: 0.2s;
+}
+div.menu-dropdown div.transculent{
+	position: fixed;
+	z-index: -1;
+	background-color: rgba(0, 0, 0, 0.5);
+	top: 60px; bottom: 0; left: 0; right: 0;
 }
 ul.menu-desktop li.parent-li{
 	display: inline-block; 
@@ -84,21 +94,18 @@ ul.menu-desktop li.parent-li a.parent-a{
 	width: 80%;
 	margin: 0 auto;
 	text-decoration: none;
-	border: 2px solid #1c4928;
+	border: 2px solid #dac6a0;
 	border-radius: 5px;
 	padding: 5px 10px;
-	color: #1c4928;
+	color: #dac6a0;
 	transition-duration: 0.2s;
 }
 ul.menu-desktop li.parent-li a.parent-a:hover{
-	background-color: #1c4928;
-	color: #f2f2f2;
-}
-ul.menu-desktop li.has-child:hover ul.menu-hover{
-	display: block;
+	background-color: #f2f2f2;
+	border: 2px solid #f2f2f2;
+	color: #dac6a0;
 }
 ul.menu-desktop li ul.menu-hover{
-	display: none;
 	padding-top: 10px;
 	overflow: hidden;
 }
@@ -106,27 +113,27 @@ ul.menu-desktop li ul.menu-hover li{
 	font-family: 'Voltaire', sans-serif;
 }
 ul.menu-desktop li ul.menu-hover li a{
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	width: 80%;
 	text-align: left;
 	margin: 0 auto;
-	color: #dac6a0;
+	color: #f2f2f2;
 }
 ul.menu-desktop li ul.menu-hover li ul li{
 	width: 100%;
 	font-family: 'Voltaire', sans-serif;
 }
 ul.menu-desktop li ul.menu-hover li ul li a{
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	width: 70%;
 	margin: 0 auto;
-	color: #1c4928;
+	color: #dac6a0;
 	transition-duration: 0.2s;
 }
 ul.menu-desktop li ul.menu-hover li ul li a:hover{
-	color: #dac6a0;
+	color: #f2f2f2;
 }
 ul.menu-mobile{
 	font-family: 'Voltaire', sans-serif;
@@ -142,11 +149,11 @@ ul.menu-mobile li.parent-li:last-child{
 }
 ul.menu-mobile li a{
 	text-decoration: none;
-	color: #dac6a0;
-	font-size: 18px;
+	color: #f2f2f2;
+	font-size: 20px;
 }
 ul.menu-mobile li a:hover{
-	color: #1c4928;
+	color: #dac6a0;
 }
 ul.menu-mobile li ul.menu-first-child{
 	margin-left: 2.5%;
@@ -164,9 +171,10 @@ ul.menu-mobile li ul.menu-first-child li:last-child{
 ul.menu-mobile li ul.menu-first-child li a{
 	text-decoration: none;
 	color: #dac6a0;
+	font-size: 18px;
 }
 ul.menu-mobile li ul.menu-first-child li a:hover{
-	color: #1c4928;
+	color: #f2f2f2;
 }
 ul.menu-mobile li ul li ul.menu-second-child{
 	margin-left: 2.5%;
@@ -176,10 +184,10 @@ ul.menu-mobile li ul li ul.menu-second-child li{
 }
 ul.menu-mobile li ul li ul.menu-second-child li a{
 	text-decoration: none;
-	color: #dac6a0;
+	color: #f2f2f2;
 }
 ul.menu-mobile li ul li ul.menu-second-child li a:hover{
-	color: #1c4928;
+	color: #dac6a0;
 }
 @media only screen and (min-width: 720px) {
 	ul.menu-mobile{
