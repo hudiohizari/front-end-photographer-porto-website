@@ -1,0 +1,196 @@
+header{
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background-color: #1c4928;
+	font-family: 'Voltaire', sans-serif;
+	font-family: 'Share Tech', sans-serif;
+	box-shadow: 0px 0px 30px black;
+	transition-duration: 0.2s;
+}
+header img{
+	height: 40px;
+	width: auto;
+	margin: 10px 20px;
+}
+header div.right-menu{
+	float: right;
+}
+header div.right-menu a{
+	display: inline-block;
+	text-decoration: none;
+}
+header div.right-menu a img{
+	height: 15px;
+	width: auto;
+	margin: 22.5px 5px;
+}
+header div.right-menu a img.black{
+	display: none;
+}
+header div.right-menu a.instagram:hover img, header div.right-menu a.twitter:hover img, header div.right-menu a.youtube:hover img{
+	display: none;
+}
+header div.right-menu a.instagram:hover img.black, header div.right-menu a.twitter:hover img.black, header div.right-menu a.youtube:hover img.black{
+	display: block;
+}
+header div.right-menu a.hamburger-icon{
+	cursor: pointer;
+}
+header div.right-menu a.hamburger-icon img{
+	height: 35px;
+	width: auto;
+	padding: 5px;
+	margin: 12.5px 5px;
+	margin-right: 15px;
+	border: 2px solid #f2f2f2;
+	border-radius: 5px;
+}
+header div.right-menu a.hamburger-icon img.black{
+	display: none;
+}
+header div.right-menu a.hamburger-icon:hover img{
+	display: none;
+}
+header div.right-menu a.hamburger-icon:hover img.black{
+	display: block;
+	border: 2px solid #d3d3d3;
+}
+header div.right-menu a.hamburger-icon img:hover{
+	border: 2px solid #dac6a0;
+}
+div.menu-dropdown{
+	display: none;
+	position: fixed;
+	z-index: 0;
+	background-color: #f2f2f2;
+	top: 60px;
+	width: 100%;
+	padding: 10px;
+	box-shadow: 0px 0px 30px black;
+	transition-duration: 0.2s;
+}
+ul.menu-desktop li.parent-li{
+	display: inline-block; 
+    vertical-align:top;
+	width: 25%;
+	width: calc(100%/4);
+	text-align: center;
+	font-family: 'Voltaire', sans-serif;
+	font-size: 18px;
+}
+ul.menu-desktop li.parent-li a.parent-a{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	text-decoration: none;
+	border: 2px solid #1c4928;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #1c4928;
+	transition-duration: 0.2s;
+}
+ul.menu-desktop li.parent-li a.parent-a:hover{
+	background-color: #1c4928;
+	color: #f2f2f2;
+}
+ul.menu-desktop li.has-child:hover ul.menu-hover{
+	display: block;
+}
+ul.menu-desktop li ul.menu-hover{
+	display: none;
+	padding-top: 10px;
+	overflow: hidden;
+}
+ul.menu-desktop li ul.menu-hover li{
+	font-family: 'Voltaire', sans-serif;
+}
+ul.menu-desktop li ul.menu-hover li a{
+	display: block;
+	text-decoration: none;
+	width: 80%;
+	text-align: left;
+	margin: 0 auto;
+	color: #dac6a0;
+}
+ul.menu-desktop li ul.menu-hover li ul li{
+	width: 100%;
+	font-family: 'Voltaire', sans-serif;
+}
+ul.menu-desktop li ul.menu-hover li ul li a{
+	display: block;
+	text-decoration: none;
+	width: 70%;
+	margin: 0 auto;
+	color: #1c4928;
+	transition-duration: 0.2s;
+}
+ul.menu-desktop li ul.menu-hover li ul li a:hover{
+	color: #dac6a0;
+}
+ul.menu-mobile{
+	font-family: 'Voltaire', sans-serif;
+}
+ul.menu-mobile li.parent-li{
+	margin: 10px 0;
+}
+ul.menu-mobile li.parent-li:first-child{
+	margin-top: 0;
+}
+ul.menu-mobile li.parent-li:last-child{
+	margin-bottom: 0;
+}
+ul.menu-mobile li a{
+	text-decoration: none;
+	color: #dac6a0;
+	font-size: 18px;
+}
+ul.menu-mobile li a:hover{
+	color: #1c4928;
+}
+ul.menu-mobile li ul.menu-first-child{
+	margin-left: 2.5%;
+}
+ul.menu-mobile li ul.menu-first-child li{
+	position: relative;
+	margin: 5px 0;
+}
+ul.menu-mobile li ul.menu-first-child li:first-child{
+	margin-top: 0;
+}
+ul.menu-mobile li ul.menu-first-child li:last-child{
+	margin-bottom: 0;
+}
+ul.menu-mobile li ul.menu-first-child li a{
+	text-decoration: none;
+	color: #dac6a0;
+}
+ul.menu-mobile li ul.menu-first-child li a:hover{
+	color: #1c4928;
+}
+ul.menu-mobile li ul li ul.menu-second-child{
+	margin-left: 2.5%;
+}
+ul.menu-mobile li ul li ul.menu-second-child li{
+	position: relative;
+}
+ul.menu-mobile li ul li ul.menu-second-child li a{
+	text-decoration: none;
+	color: #dac6a0;
+}
+ul.menu-mobile li ul li ul.menu-second-child li a:hover{
+	color: #1c4928;
+}
+@media only screen and (min-width: 720px) {
+	ul.menu-mobile{
+		display: none;
+	}
+}
+@media only screen and (max-width: 720px) {
+	div.sidebar{
+		display: none;
+	}
+	ul.menu-desktop{
+		display: none;
+	}
+}

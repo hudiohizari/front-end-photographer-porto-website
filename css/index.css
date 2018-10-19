@@ -1,64 +1,14 @@
-/*animasi slideshow*/
-/* menentukan keyframes dengan cara, waktu muncul perfoto / total waktu muncul semua foto, contoh disini ada 3 foto, dengan masing masing foto 6 detik, jadi perhitungannya, 6/18 = 0.3333, 0.33 dibagi 2 untuk berapa lama gambar kita akan muncul pertama kali dalam keyframe, lalu angka 0.33 itu untuk gambar mulai hilang */
-@keyframes imageAnimation { 
-    0% { opacity: 0;
-    animation-timing-function: ease-in; }
-    16% { opacity: 1; /*setengah dari hasil (33%)*/
-         animation-timing-function: ease-out; }
-    33% { opacity: 1 } /* hasil 0,33 jadi 33%*/
-    50% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@-webkit-keyframes imageAnimation { 
-    0% { opacity: 0;
-    animation-timing-function: ease-in; }
-    16% { opacity: 1; 
-         animation-timing-function: ease-out; }
-    33% { opacity: 1 } 
-    50% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@-moz-keyframes imageAnimation { 
-    0% { opacity: 0;
-    animation-timing-function: ease-in; }
-    16% { opacity: 1;
-         animation-timing-function: ease-out; }
-    33% { opacity: 1 }
-    50% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@-o-keyframes imageAnimation { 
-    0% { opacity: 0;
-    animation-timing-function: ease-in; }
-    16% { opacity: 1;
-         animation-timing-function: ease-out; }
-    33% { opacity: 1 }
-    50% { opacity: 0 }
-    100% { opacity: 0 }
-}
-@-ms-keyframes imageAnimation { 
-    0% { opacity: 0;
-    animation-timing-function: ease-in; }
-    16% { opacity: 1;
-         animation-timing-function: ease-out; }
-    33% { opacity: 1 }
-    50% { opacity: 0 }
-    100% { opacity: 0 }
-}
-/*end animasi slideshow*/
 header{
 	height: 60px;
 	padding: 16px;
-	background-color: #003300;
+	background-color: #1c4928;
 	font-family: 'Voltaire', sans-serif;
 	font-family: 'Share Tech', sans-serif;
+	box-shadow: 0px 0px 30px black;
 }
 header a{
 	text-decoration: none;
-	color: #f2f2f2;
-}
-.no-cssanimations div.slideshow li span{
-	opacity: 1;
+	color: #dac6a0;
 }
 div.slideshow, div.slideshow:after { 
     position: fixed;
@@ -85,33 +35,12 @@ div.slideshow li span {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
-    opacity: 0;
+    opacity: 1;
     z-index: 0;
 	-webkit-backface-visibility: hidden;
-    -webkit-animation: imageAnimation 18s linear infinite 0s;
-    -moz-animation: imageAnimation 18s linear infinite 0s;
-    -o-animation: imageAnimation 18s linear infinite 0s;
-    -ms-animation: imageAnimation 18s linear infinite 0s;
-    animation: imageAnimation 18s linear infinite 0s; 
 }
-div.slideshow li:nth-child(1) span { 
-    background-image: url(../asset/image/image1.jpg) 
-}
-div.slideshow li:nth-child(2) span { 
-    background-image: url(../asset/image/image2.jpg);
-    -webkit-animation-delay: 6s;
-    -moz-animation-delay: 6s;
-    -o-animation-delay: 6s;
-    -ms-animation-delay: 6s;
-    animation-delay: 6s; 
-}
-div.slideshow li:nth-child(3) span { 
-    background-image: url(../asset/image/image3.jpg);
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 12s; 
+div.slideshow li span { 
+    background-image: url(../asset/image/index-background.jpg) 
 }
 div.background-content{
 	position: absolute;
@@ -136,18 +65,18 @@ div.wrapper-content img.logo{
 }
 div.wrapper-content a{
 	text-decoration: none;
-	color: #f2f2f2;
+	color: rgba(218, 198, 160, 0.9);
 	background-color: rgba(0, 0, 0, 0.5);
-	border: 2px solid #f2f2f2;
+	border: 2px solid rgba(218, 198, 160, 0.9);
 	padding: 10px 20px;
 	border-radius: 5px;
 	margin-top: 30px;
 	transition-duration: 0.2s;
 }
 div.wrapper-content a:hover{
-	background-color: rgba(255, 255, 255, 0.7);
-	border: rgba(255, 255, 255, 0.7);
-	color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(218, 198, 160, 0.9);
+	border: rgba(218, 198, 160, 0.9);
+	color: rgba(255, 255, 255, 0.9);
 }
 footer{
 	position: absolute;
