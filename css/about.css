@@ -1,0 +1,40 @@
+div.content{
+	position: absolute;
+	z-index: -1;
+	top: 60px; bottom: 0;
+	width: 100%;
+}
+div.wrapper-middle{
+	position: absolute;
+	width: 80%;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	font-family: 'Voltaire', sans-serif;
+	text-align: justify;
+}
+div.wrapper-middle div.left{
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+	padding-right: 10px;
+}
+div.wrapper-middle div.right{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 50%;
+}
+div.wrapper-middle div.right img{
+    position: absolute;
+    margin: auto; 
+	padding-left: 10px;
+    min-height: 100%;
+    min-width: 100%;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -100%;
+}
