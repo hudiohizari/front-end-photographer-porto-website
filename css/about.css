@@ -28,7 +28,7 @@ div.wrapper-middle div.right{
 	width: 50%;
 }
 div.wrapper-middle div.right img{
-    position: absolute;
+	position: absolute;
     margin: auto; 
 	padding-left: 10px;
     min-height: 100%;
@@ -37,4 +37,15 @@ div.wrapper-middle div.right img{
     right: -100%;
     top: -100%;
     bottom: -100%;
+}
+@media only screen and (max-width: 720px) {
+	div.wrapper-middle div.left, div.wrapper-middle div.right{
+		width: 100%;
+		padding: 0;
+		margin-top: 20px;
+	}
+	div.wrapper-middle div.right img{
+		padding: 0;
+		margin-top: 10px;
+	}
 }

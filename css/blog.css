@@ -1,0 +1,93 @@
+div.content{
+	position: absolute;
+	z-index: -1;
+	top: 60px; bottom: 0;
+	width: 100%;
+	padding: 20px;
+	font-family: 'Voltaire', sans-serif;
+}
+div.content h3{
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+div.image-slideshow{
+	position: relative;
+	width: 30%;
+	margin: 0 auto;
+	text-align: justify;
+}
+div.image-slideshow h4{
+	font-size: 22px;
+}
+div.image-slideshow div.main-image{
+	position: relative;
+	width: 100%;
+	height: 240px;
+	background-color: black;
+	overflow: hidden;
+}
+div.image-slideshow div.main-image img{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);	
+}
+div.image-slideshow div.image-small{
+	width: 100%;
+	margin: 10px 0;
+	overflow: hidden;
+}
+div.image-slideshow div.image-small li{
+	position: relative;
+	display: inline-block; 
+    vertical-align: middle;
+	height: 60px;
+	width: 25%;
+	width: calc(100%/4);
+	background-color: black;
+	cursor: pointer;
+}
+div.image-slideshow div.image-small li div.image-small-container img{
+	position: absolute;
+	width: auto;
+	top: 50%;
+	-webkit-transform: translate(0, -50%);
+	-ms-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+div.image-slideshow div.image-small li div.image-small-container span{
+	z-index: 1;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	width: inherit;
+	height: inherit;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+div.image-slideshow div.image-small li div.image-small-container span.active{
+	display: none;
+}
+div.youtube{
+	position: relative;
+	width: 40%;
+	margin: 20px auto 30px;
+	font-family: 'Voltaire', sans-serif;
+	text-align: center;
+}
+div.youtube div.thumbnail-container{
+	position: relative;
+	width: 100%;
+	height: 240px;
+	background-color: black;
+	overflow: hidden;
+}
+@media only screen and (max-width: 720px) {
+	div.image-slideshow, div.youtube{
+		width: 100%;
+	}
+	div.image-slideshow div.image-small li{
+		height: 80px;
+	}
+}
