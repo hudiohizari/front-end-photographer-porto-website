@@ -1,0 +1,40 @@
+div.left{
+    left: 0;
+}
+div.right{
+    right: 0;
+}
+div.sidebar{
+    position: fixed;
+    z-index: -1;
+    top: 60px; bottom: 0; 
+    width: 55px;
+    background-color: #dac6a0;
+}
+div.sidebar h4 {
+    display: inline;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'Voltaire', sans-serif;
+    font-family: 'Share Tech', sans-serif;
+    color: #000; 
+}
+div.left h4{
+    width: 100px;
+    margin-left: -50px;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+div.right h4{
+    width: 300px;
+    margin-left: -150px;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
