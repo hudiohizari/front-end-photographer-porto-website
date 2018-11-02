@@ -15,17 +15,18 @@ div.wrapper-middle{
 	font-family: 'Voltaire', sans-serif;
 }
 div.content form label{
-	color: #dac6a0;
+	color: #1c4928;
 }
 div.content form input, div.content form textarea{
 	width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 2px solid #dac6a0;
-    color: #dac6a0;
+    border: 2px solid #1c4928;
+    color: #1c4928;
     border-radius: 4px;
     box-sizing: border-box;
+	font-family: 'Voltaire', sans-serif;
 }
 div.content form textarea{
 	resize: none;
@@ -35,7 +36,7 @@ div.content form textarea{
 div.content form input[type=submit] {
     width: 100%;
     background-color: #1c4928;
-    color: white;
+    color: #dac6a0;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
