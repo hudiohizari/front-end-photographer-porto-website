@@ -8,39 +8,40 @@ div.content{
 }
 div.content h3{
 	text-align: center;
-	font-size: 28px;
+	font-size: 34px;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+	letter-spacing: 10px;
 }
-div.image-slideshow{
+div.article-column{
 	position: relative;
 	width: 30%;
 	margin: 0 auto;
 	text-align: justify;
 }
-div.image-slideshow h4{
+div.article-column h4{
 	font-size: 22px;
 }
-div.image-slideshow div.main-image{
+div.article-column div.main-image{
 	position: relative;
 	width: 100%;
 	height: 240px;
 	background-color: black;
 	overflow: hidden;
 }
-div.image-slideshow div.main-image img{
+div.article-column div.main-image img{
 	position: absolute;
 	top: 50%;
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
 	transform: translate(0, -50%);	
 }
-div.image-slideshow div.image-small{
+div.article-column div.image-small{
 	width: 100%;
 	margin: 10px 0;
 	overflow: hidden;
 }
-div.image-slideshow div.image-small li{
+div.article-column div.image-small li{
 	position: relative;
 	display: inline-block; 
     vertical-align: middle;
@@ -50,7 +51,7 @@ div.image-slideshow div.image-small li{
 	background-color: black;
 	cursor: pointer;
 }
-div.image-slideshow div.image-small li div.image-small-container img{
+div.article-column div.image-small li div.image-small-container img{
 	position: absolute;
 	width: auto;
 	top: 50%;
@@ -58,7 +59,7 @@ div.image-slideshow div.image-small li div.image-small-container img{
 	-ms-transform: translate(0, -50%);
 	transform: translate(0, -50%);
 }
-div.image-slideshow div.image-small li div.image-small-container span{
+div.article-column div.image-small li div.image-small-container span{
 	z-index: 1;
 	position: absolute;
 	top: 0; bottom: 0; left: 0; right: 0;
@@ -66,7 +67,7 @@ div.image-slideshow div.image-small li div.image-small-container span{
 	height: inherit;
 	background-color: rgba(0, 0, 0, 0.5);
 }
-div.image-slideshow div.image-small li div.image-small-container span.active{
+div.article-column div.image-small li div.image-small-container span.active{
 	display: none;
 }
 div.youtube{
@@ -84,10 +85,10 @@ div.youtube div.thumbnail-container{
 	overflow: hidden;
 }
 @media only screen and (max-width: 720px) {
-	div.image-slideshow, div.youtube{
+	div.article-column, div.youtube{
 		width: 100%;
 	}
-	div.image-slideshow div.image-small li{
+	div.article-column div.image-small li{
 		height: 80px;
 	}
 }
