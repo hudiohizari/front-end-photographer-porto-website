@@ -8,7 +8,34 @@ header{
 	box-shadow: 0px 0px 30px black;
 	transition-duration: 0.2s;
 }
-header img{
+header form{
+	float: right;
+}
+header form input[type=text]{
+	margin: 16px 0;
+	padding: 3px;
+	color: #1c4928;
+	border: 2px solid #dac6a0;
+	border-right: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+header form button{
+	vertical-align: middle;
+	padding-top: 5px;
+	margin: 0;
+	background-color: #fff;
+	border: 2px solid #dac6a0;
+	border-left: 0;
+	margin-right: 10px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+header form button img{
+	height: 15px;
+	width: auto;
+}
+header a img{
 	height: 40px;
 	width: auto;
 	margin: 10px 20px;
@@ -101,14 +128,25 @@ ul.menu-desktop li.parent-li a.parent-a{
 	color: #dac6a0;
 	transition-duration: 0.2s;
 }
+ul.menu-desktop li.parent-li:first-child a.parent-a{
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.5);
+}
 ul.menu-desktop li.parent-li a.parent-a:hover{
 	background-color: #f2f2f2;
 	border: 2px solid #f2f2f2;
 	color: #dac6a0;
 }
 ul.menu-desktop li ul.menu-hover{
-	padding-top: 10px;
+	padding: 5px;
 	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+	color: rgba(218, 198, 160, 0.9);
+	border: 2px solid #dac6a0;
+	border-top: 0;
 }
 ul.menu-desktop li ul.menu-hover li{
 	font-family: 'Voltaire', sans-serif;
@@ -116,8 +154,8 @@ ul.menu-desktop li ul.menu-hover li{
 ul.menu-desktop li ul.menu-hover li a{
 	display: inline-block;
 	text-decoration: none;
-	width: 80%;
 	text-align: left;
+	width: 100%;
 	margin: 0 auto;
 	color: #f2f2f2;
 }
@@ -128,7 +166,7 @@ ul.menu-desktop li ul.menu-hover li ul li{
 ul.menu-desktop li ul.menu-hover li ul li a{
 	display: inline-block;
 	text-decoration: none;
-	width: 70%;
+	width: 90%;
 	margin: 0 auto;
 	color: #dac6a0;
 	transition-duration: 0.2s;
@@ -138,6 +176,32 @@ ul.menu-desktop li ul.menu-hover li ul li a:hover{
 }
 ul.menu-mobile{
 	font-family: 'Voltaire', sans-serif;
+}
+ul.menu-mobile form input[type=text]{
+	width: 90%;
+	box-sizing: border-box;
+	padding: 3px;
+	color: #1c4928;
+	border: 2px solid #dac6a0;
+	border-right: 0;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+ul.menu-mobile form button{
+	width: 10%;
+	box-sizing: border-box;
+	vertical-align: middle;
+	padding-top: 5px;
+	margin: 0;
+	background-color: #fff;
+	border: 2px solid #dac6a0;
+	border-left: 0;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+ul.menu-mobile form button img{
+	height: 15px;
+	width: auto;
 }
 ul.menu-mobile li.parent-li{
 	margin: 10px 0;
@@ -196,6 +260,9 @@ ul.menu-mobile li ul li ul.menu-second-child li a:hover{
 	}
 }
 @media only screen and (max-width: 720px) {
+	header form{
+		display: none;
+	}
 	div.sidebar{
 		display: none;
 	}
