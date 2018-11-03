@@ -21,6 +21,9 @@ div.wrapper-middle div.left{
 	width: 50%;
 	padding-right: 10px;
 }
+div.wrapper-middle div.left p{
+	color: #1c4928;
+}
 div.wrapper-middle div.right{
 	position: relative;
 	display: inline-block;

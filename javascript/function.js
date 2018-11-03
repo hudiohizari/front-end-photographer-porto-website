@@ -24,3 +24,6 @@ function changeBlogImage(imgId){
 	slides[imgId-1].style.display = "block";
 	slideList[imgId-1].getElementsByTagName('div')[0].getElementsByTagName('span')[0].className = "active";
 }
+function startLargeImage(imgUrl){
+    $("img-container").html("<img src='" + imgUrl + "'>");
+}

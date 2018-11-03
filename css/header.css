@@ -17,8 +17,8 @@ header form input[type=text]{
 	color: #1c4928;
 	border: 2px solid #dac6a0;
 	border-right: 0;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
 header form button{
 	vertical-align: middle;
@@ -28,8 +28,8 @@ header form button{
 	border: 2px solid #dac6a0;
 	border-left: 0;
 	margin-right: 10px;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 header form button img{
 	height: 15px;
@@ -184,8 +184,8 @@ ul.menu-mobile form input[type=text]{
 	color: #1c4928;
 	border: 2px solid #dac6a0;
 	border-right: 0;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
 }
 ul.menu-mobile form button{
 	width: 10%;
@@ -196,8 +196,8 @@ ul.menu-mobile form button{
 	background-color: #fff;
 	border: 2px solid #dac6a0;
 	border-left: 0;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 ul.menu-mobile form button img{
 	height: 15px;

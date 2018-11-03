@@ -10,6 +10,7 @@ div.content h3{
 	text-align: center;
 	font-size: 34px;
 	font-weight: bold;
+	color: #1c4928;
 	margin-bottom: 30px;
 	letter-spacing: 10px;
 }
@@ -21,6 +22,7 @@ div.article-column{
 }
 div.article-column h4{
 	font-size: 22px;
+	color: #1c4928;
 }
 div.article-column div.main-image{
 	position: relative;
@@ -70,6 +72,9 @@ div.article-column div.image-small li div.image-small-container span{
 div.article-column div.image-small li div.image-small-container span.active{
 	display: none;
 }
+div.article-column p{
+	color: #1c4928;
+}
 div.youtube{
 	position: relative;
 	width: 40%;
@@ -83,6 +88,9 @@ div.youtube div.thumbnail-container{
 	height: 240px;
 	background-color: black;
 	overflow: hidden;
+}
+div.youtube a{
+	color: #1c4928;
 }
 @media only screen and (max-width: 720px) {
 	div.article-column, div.youtube{
