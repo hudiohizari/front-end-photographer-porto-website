@@ -25,5 +25,5 @@ function changeBlogImage(imgId){
 	slideList[imgId-1].getElementsByTagName('div')[0].getElementsByTagName('span')[0].className = "active";
 }
 function startLargeImage(imgUrl){
-    $("img-container").html("<img src='" + imgUrl + "'>");
+	$("#large-img").attr("src", imgUrl);
 }

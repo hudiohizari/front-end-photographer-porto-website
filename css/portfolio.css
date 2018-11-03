@@ -92,9 +92,25 @@ div.portfolio-row div.portfolio-column img:last-child{
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0.5);
 }
-@media only screen and (min-width: 720px) {
-}
 @media only screen and (max-width: 720px) {
+	div.img-large div.img-container{
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translate(0, -50%);
+		-ms-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		height: auto;
+		width: 100%;
+		padding: 10px;
+	}
+	div.img-large div.img-container img{
+		height: auto;
+		width: 100%;
+	}
+	div.img-large img.close{
+		top: 20px;
+		right: 20px;
+	}
 	div.content{
 		top: 60px; bottom: 0; left: 0; right: 0;
 	}
