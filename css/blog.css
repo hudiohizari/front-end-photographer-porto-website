@@ -4,7 +4,7 @@ div.content{
 	top: 60px; bottom: 0;
 	width: 100%;
 	padding: 20px;
-	font-family: 'Voltaire', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 div.content h3{
 	text-align: center;
@@ -79,7 +79,7 @@ div.youtube{
 	position: relative;
 	width: 40%;
 	margin: 20px auto 30px;
-	font-family: 'Voltaire', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	text-align: center;
 }
 div.youtube div.thumbnail-container{

@@ -28,7 +28,7 @@ div.content{
 	position: absolute;
 	z-index: -1;
 	top: 80px; bottom: 0; left: 75px; right: 75px;
-	font-family: 'Voltaire', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 div.portfolio-desc{
 	height: 150px;

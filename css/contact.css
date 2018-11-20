@@ -12,10 +12,10 @@ div.wrapper-middle{
 	-webkit-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
-	font-family: 'Voltaire', sans-serif;
 }
 div.content form label{
 	color: #1c4928;
+	font-family: 'Montserrat', sans-serif;
 }
 div.content form input, div.content form textarea{
 	width: 100%;
@@ -26,7 +26,7 @@ div.content form input, div.content form textarea{
     color: #1c4928;
     border-radius: 4px;
     box-sizing: border-box;
-	font-family: 'Voltaire', sans-serif;
+	font-family: 'Roboto Slab', sans-serif;
 }
 div.content form textarea{
 	resize: none;
@@ -34,16 +34,18 @@ div.content form textarea{
 	max-height: 100px;
 }
 div.content form input[type=submit] {
-    width: 100%;
+	float: right;
+	width: auto;
     background-color: #1c4928;
     color: #dac6a0;
-    padding: 14px 20px;
+    padding: 14px 70px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition-duration: 0.2s;
     box-shadow: 2px 2px 10px #000;
+	font-family: 'Montserrat', sans-serif;
 }
 div.content form input[type=submit]:hover {
 	transform: scale(1.01);

@@ -3,8 +3,7 @@ header{
 	width: 100%;
 	height: 60px;
 	background-color: rgba(28, 73, 40, 0.75); /*#1c4928*/
-	font-family: 'Voltaire', sans-serif;
-	font-family: 'Share Tech', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	box-shadow: 0px 0px 30px black;
 	transition-duration: 0.2s;
 }
@@ -15,6 +14,7 @@ header form input[type=text]{
 	margin: 16px 0;
 	padding: 3px;
 	color: #1c4928;
+	font-family: 'Montserrat', sans-serif;
 	border: 2px solid #dac6a0;
 	border-right: 0;
 	border-top-left-radius: 3px;
@@ -32,7 +32,7 @@ header form button{
 	border-bottom-right-radius: 3px;
 }
 header form button img{
-	height: 15px;
+	height: 16px;
 	width: auto;
 }
 header a img{
@@ -114,7 +114,7 @@ ul.menu-desktop li.parent-li{
 	width: 25%;
 	width: calc(100%/4);
 	text-align: center;
-	font-family: 'Voltaire', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 }
 ul.menu-desktop li.parent-li a.parent-a{
@@ -149,7 +149,7 @@ ul.menu-desktop li ul.menu-hover{
 	border-top: 0;
 }
 ul.menu-desktop li ul.menu-hover li{
-	font-family: 'Voltaire', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 ul.menu-desktop li ul.menu-hover li a{
 	display: inline-block;
@@ -161,7 +161,7 @@ ul.menu-desktop li ul.menu-hover li a{
 }
 ul.menu-desktop li ul.menu-hover li ul li{
 	width: 100%;
-	font-family: 'Voltaire', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 ul.menu-desktop li ul.menu-hover li ul li a{
 	display: inline-block;
@@ -175,13 +175,14 @@ ul.menu-desktop li ul.menu-hover li ul li a:hover{
 	color: #f2f2f2;
 }
 ul.menu-mobile{
-	font-family: 'Voltaire', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 ul.menu-mobile form input[type=text]{
 	width: 90%;
 	box-sizing: border-box;
 	padding: 3px;
 	color: #1c4928;
+	font-family: 'Montserrat', sans-serif;
 	border: 2px solid #dac6a0;
 	border-right: 0;
 	border-top-left-radius: 3px;
@@ -200,7 +201,7 @@ ul.menu-mobile form button{
 	border-bottom-right-radius: 3px;
 }
 ul.menu-mobile form button img{
-	height: 15px;
+	height: 16px;
 	width: auto;
 }
 ul.menu-mobile li.parent-li{
@@ -237,9 +238,6 @@ ul.menu-mobile li ul.menu-first-child li a{
 	text-decoration: none;
 	color: #dac6a0;
 	font-size: 18px;
-}
-ul.menu-mobile li ul.menu-first-child li a:hover{
-	color: #f2f2f2;
 }
 ul.menu-mobile li ul li ul.menu-second-child{
 	margin-left: 2.5%;
