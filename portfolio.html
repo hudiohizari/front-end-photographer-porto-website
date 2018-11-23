@@ -107,33 +107,103 @@
 			</form>
 		</header>
 		<div class="content">
-			<div class="portfolio-desc">
-				<img src="asset/image/image1.jpg">
-				<h1>COCA - COLA</h1>
-			</div>
-			<div class="portfolio-row">
-				<div class="portfolio-column">
-					<div class="img-container">
-						<img src="asset/image/image1.jpg">
-						<img src="asset/image/plus.png" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image1.jpg')">
-					</div>
-				</div><div class="portfolio-column">
-					<div class="img-container">
-						<img src="asset/image/image2.jpg">
-						<img src="asset/image/plus.png" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image2.jpg')">
-					</div>
-				</div><div class="portfolio-column">
-					<div class="img-container">
-						<img src="asset/image/image3.jpg">
-						<img src="asset/image/plus.png" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image3.jpg')">
-					</div>
-				</div><div class="portfolio-column">
-					<div class="img-container">
-						<img src="asset/image/image1.jpg">
-						<img src="asset/image/plus.png" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image3.jpg')">
+			<div class="slideshow-container">
+				<div class="slides fade">
+					<div class="img-row">
+						<div class="img-container" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image1.jpg')">
+							<img src="asset/image/image1.jpg">
+							<img src="asset/image/plus.png">
+						</div>
+					</div><div class="img-row">
+						<div class="img-container" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image2.jpg')">
+							<img src="asset/image/image2.jpg">
+							<img src="asset/image/plus.png">
+						</div>
+					</div><div class="img-row">
+						<div class="img-container" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image3.jpg')">
+							<img src="asset/image/image3.jpg">
+							<img src="asset/image/plus.png">
+						</div>
 					</div>
 				</div>
+				<div class="slides fade">
+					<div class="img-row">
+						<div class="img-container" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image2.jpg')">
+							<img src="asset/image/image2.jpg">
+							<img src="asset/image/plus.png">
+						</div>
+					</div><div class="img-row">
+						<div class="img-container" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image3.jpg')">
+							<img src="asset/image/image3.jpg">
+							<img src="asset/image/plus.png">
+						</div>
+					</div><div class="img-row">
+						<div class="img-container" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image1.jpg')">
+							<img src="asset/image/image1.jpg">
+							<img src="asset/image/plus.png">
+						</div>
+					</div>
+				</div>
+				<div class="slides fade">
+					<div class="img-row">
+						<div class="img-container" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image3.jpg')">
+							<img src="asset/image/image3.jpg">
+							<img src="asset/image/plus.png">
+						</div>
+					</div><div class="img-row">
+						<div class="img-container" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image1.jpg')">
+							<img src="asset/image/image1.jpg">
+							<img src="asset/image/plus.png">
+						</div>
+					</div><div class="img-row">
+						<div class="img-container" onclick="toggleShowTag('img-large');startLargeImage('asset/image/image2.jpg')">
+							<img src="asset/image/image2.jpg">
+							<img src="asset/image/plus.png">
+						</div>
+					</div>
+				</div>
+
+				<a id="prev" class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a id="next" class="next" onclick="plusSlides(1)">&#10095;</a>
+
 			</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+
+				function showSlides(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("slides");
+				  for (i = 0; i < slides.length; i++) {
+				      slides[i].style.display = "none";  
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+					var prev = document.getElementById("prev")
+					var next = document.getElementById("next")
+
+					if (slideIndex == 1) {
+						prev.style.display = "none";
+					}
+					else if (slideIndex == 2){
+						prev.style.display = "block";
+					}
+
+					if (slideIndex == 3) {
+						next.style.display = "none";
+					}
+					else if (slideIndex == 2){
+						next.style.display = "block";
+					}
+				}
+			</script>
 		</div>
 		<div class="left sidebar">
 			<h4>ADIT HOLMES</h4>

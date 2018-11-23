@@ -1,12 +1,12 @@
 /*animasi slideshow*/
-/* menentukan keyframes dengan cara, waktu muncul perfoto / total waktu muncul semua foto, contoh disini ada 3 foto, dengan masing masing foto 6 detik, total waktu semua foto 18 detik, jadi perhitungan per gambarnya, 6/18 = 0.3333, 0.33 dibagi 2 untuk berapa lama gambar kita akan muncul pertama kali dalam keyframe, lalu angka 0.33 itu untuk gambar mulai hilang */
+/* menentukan keyframes dengan cara, waktu muncul perfoto / total waktu muncul semua foto, contoh disini ada 3 foto, dengan masing masing foto 3 detik, total waktu semua foto 9 detik, jadi perhitungan per gambarnya, 3/9 = 0.3333, 0.33 dibagi 2 untuk berapa lama gambar kita akan muncul pertama kali dalam keyframe, lalu angka 0.33 itu untuk gambar mulai hilang */
 @keyframes slideshowGambar { 
     0% { opacity: 0;
     animation-timing-function: ease-in; }
     16% { opacity: 1; /*setengah dari hasil (33%)*/
          animation-timing-function: ease-out; }
     33% { opacity: 1 } /* hasil 0,33 jadi 33%*/
-    50% { opacity: 0 }
+    60% { opacity: 0 }
     100% { opacity: 0 }
 }
 @-webkit-keyframes slideshowGambar { 
@@ -76,28 +76,28 @@ div.slideshow li span {
     opacity: 0;
     z-index: 0;
     -webkit-backface-visibility: hidden;
-    -webkit-animation: slideshowGambar 18s linear infinite 0s;
-    -moz-animation: slideshowGambar 18s linear infinite 0s;
-    -o-animation: slideshowGambar 18s linear infinite 0s;
-    -ms-animation: slideshowGambar 18s linear infinite 0s;
-    animation: slideshowGambar 18s linear infinite 0s; 
+    -webkit-animation: slideshowGambar 9s linear infinite 0s;
+    -moz-animation: slideshowGambar 9s linear infinite 0s;
+    -o-animation: slideshowGambar 9s linear infinite 0s;
+    -ms-animation: slideshowGambar 9s linear infinite 0s;
+    animation: slideshowGambar 9s linear infinite 0s; 
 }
 div.slideshow li:nth-child(1) span { 
     background-image: url(../asset/image/image1.jpg) 
 }
 div.slideshow li:nth-child(2) span { 
     background-image: url(../asset/image/image2.jpg);
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s; 
+}
+div.slideshow li:nth-child(3) span { 
+    background-image: url(../asset/image/image3.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
     -ms-animation-delay: 6s;
     animation-delay: 6s; 
-}
-div.slideshow li:nth-child(3) span { 
-    background-image: url(../asset/image/image3.jpg);
-    -webkit-animation-delay: 12s;
-    -moz-animation-delay: 12s;
-    -o-animation-delay: 12s;
-    -ms-animation-delay: 12s;
-    animation-delay: 12s; 
 }

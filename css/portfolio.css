@@ -27,77 +27,41 @@ div.img-large img.close{
 div.content{
 	position: absolute;
 	z-index: -1;
-	top: 80px; bottom: 0; left: 75px; right: 75px;
+	top: 60px; bottom: 0; left: 75px; right: 75px;
 	font-family: 'Montserrat', sans-serif;
 }
-div.portfolio-desc{
-	height: 150px;
-	margin-bottom: 40px;
-}
-div.portfolio-desc img{
-	display: inline-block;
-	height: 100%;
-	width: auto;
-}
-div.portfolio-desc h1{
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 20px;
-	font-size: 60px;
-	font-weight: bold;
-	color: #1c4928;
-}
-div.portfolio-row::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-div.portfolio-row::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-} 
-div.portfolio-row::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: #323232;
-    height: 3px;
-}
-div.portfolio-row::-webkit-scrollbar-corner{ 
-	display: none; 
-	height: 0px; 
-	width: 0px; 
-}
- 
-div.portfolio-row{
-	overflow-x: auto;
-	overflow-y: hidden;
-	white-space: nowrap;
-	margin-top: 20px;
-}
-div.portfolio-row div.portfolio-column{
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-	overflow: hidden;
-	box-sizing: border-box;
-	margin-right: 10px;
-}
-div.portfolio-row div.portfolio-column:last-child{
-	margin-right: 0;
-}
-div.portfolio-row div.portfolio-column div.img-container{
-	position: relative;
+div.slideshow-container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	width: 100%;
-	height: 300px;
-	background-color: #000;
 }
-div.portfolio-row div.portfolio-column img:first-child{
-	height: 100%;
-	width: auto;
+div.slideshow-container div.img-row{
+	display: inline-block;
+	width: 33.333333%;
+	max-width: calc(100 / 3);
 }
-div.portfolio-row div.portfolio-column img:last-child{
+div.slideshow-container div.img-container{
+	position: relative;
+	height: 50vh;
+	overflow: hidden;
+	background-color: black;
+	margin: 0 5px;
+}
+div.slideshow-container div.img-container img:first-child{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+div.slideshow-container div.img-container img:last-child{
+	opacity: 0;
 	position: absolute;
 	right: 10px;
 	top: 10px;
@@ -105,6 +69,49 @@ div.portfolio-row div.portfolio-column img:last-child{
 	height: auto;
 	cursor: pointer;
 	background-color: rgba(0, 0, 0, 0.5);
+	transition-duration: 0.25s;
+}
+div.slideshow-container div.img-container:hover img:last-child{
+	opacity: 1;
+}
+div.slideshow-container a.prev, div.slideshow-container a.next {
+	cursor: pointer;
+	position: fixed;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 22px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+div.slideshow-container a.prev {
+	margin-left: 5px;
+}
+div.slideshow-container a.next {
+	right: 5px;
+	border-radius: 3px 0 0 3px;
+}
+div.slideshow-container a.prev:hover, div.slideshow-container a.next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+div.slideshow-container.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
 }
 @media only screen and (max-width: 720px) {
 	div.img-large div.img-container{
@@ -114,7 +121,6 @@ div.portfolio-row div.portfolio-column img:last-child{
 		-ms-transform: translate(0, -50%);
 		transform: translate(0, -50%);
 		height: auto;
-		width: 100%;
 		padding: 10px;
 	}
 	div.img-large div.img-container img{
@@ -128,32 +134,17 @@ div.portfolio-row div.portfolio-column img:last-child{
 	div.content{
 		top: 60px; bottom: 0; left: 0; right: 0;
 	}
-	div.portfolio-desc{
-		height: auto;
-		margin-bottom: 10px;
+	div.slideshow-container{
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
 	}
-	div.portfolio-desc img{
-		display: block;
-		height: auto;
-		width: 100%;
-		margin: 0 auto;
-		}
-	div.portfolio-desc h1{
-		display: block;
-		margin-left: 0;
-		font-size: 30px;
-		text-align: center;
-	}
-	div.portfolio-row{
-		margin: 0 auto;
-		height: auto;
-		width: 100%
-	}
-	div.portfolio-row div.portfolio-column{
+	div.slideshow-container div.img-row{
 		width: 100%;
 	}
-	div.portfolio-row div.portfolio-column div.img-container{
-		text-align: center;
-		height: 200px;
+}
+@media only screen and (max-width: 300px) {
+	div.slideshow-container a.prev, div.slideshow-container a.next {
+		font-size: 11px;
 	}
 }

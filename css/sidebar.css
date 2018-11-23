@@ -9,7 +9,7 @@ div.sidebar{
     z-index: -1;
     top: 60px; bottom: 0; 
     width: 55px;
-    background-color: #dac6a0;
+    background-color: rgba(237, 216, 153, 0.85);
 }
 div.sidebar h4 {
     display: inline;
@@ -20,19 +20,21 @@ div.sidebar h4 {
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     text-align: center;
+    font-size: 14px;
+    letter-spacing: 5px;
     font-family:'Helvetica 57 Condensed';
     color: #000; 
 }
 div.left h4{
-    width: 100px;
-    margin-left: -50px;
+    width: 160px;
+    margin-left: -80px;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
 div.right h4{
-    width: 300px;
-    margin-left: -150px;
+    width: 420px;
+    margin-left: -210px;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
