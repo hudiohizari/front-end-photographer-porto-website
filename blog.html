@@ -132,6 +132,37 @@
 							<img src="asset/image/image3.jpg">
 						</div>
 				</div>
+				<script type="text/javascript">	
+					var blogSlide = 0;
+					var blogTimeout; 
+					showBlogImage();		
+					function showBlogImage(){
+						var slides = document.getElementsByClassName("slide");
+						var slideList = document.getElementsByClassName("image-list");
+
+						var i
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";  
+						}
+						for (i = 0; i < slideList.length; i++) {
+							slideList[i].getElementsByTagName('div')[0].getElementsByTagName('span')[0].className = "";
+						}
+
+					    blogSlide++;
+					    if (blogSlide > slides.length) {
+					    	blogSlide = 1;
+					    }    
+
+						slides[blogSlide-1].style.display = "block";
+						slideList[blogSlide-1].getElementsByTagName('div')[0].getElementsByTagName('span')[0].className = "active";
+    					blogTimeout = setTimeout(showBlogImage, 2000); //Ganti gambar setiap 2 detik
+					}
+					function changeBlogImage(imgId){
+						blogSlide = imgId - 1;
+    					clearTimeout(blogTimeout);
+						showBlogImage();
+					}
+				</script>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
